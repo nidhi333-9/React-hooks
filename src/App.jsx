@@ -1,4 +1,6 @@
+import React from "react";
 import "./App.css";
+import ComponentC from "./components/ComponentC";
 import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
 import HookCounterOne from "./components/HookCounterOne";
@@ -8,6 +10,8 @@ import HookMouse from "./components/HookMouse";
 import IntervalHookCounter from "./components/IntervalHookCounter";
 import MouseContainer from "./components/MouseContainer";
 
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 function App() {
   return (
     <div className="App">
@@ -23,7 +27,15 @@ function App() {
       {/* <IntervalHookCounter /> */}
 
       {/* Data fetching using useEffect */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+
+      {/* useContext */}
+
+      <UserContext.Provider value={"Nidhi"}>
+        <ChannelContext.Provider value={"Codevolution"}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
