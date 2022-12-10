@@ -1,4 +1,5 @@
 import "./App.css";
+import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
 import HookCounterOne from "./components/HookCounterOne";
 import HookCounterThree from "./components/HookCounterThree";
@@ -19,7 +20,10 @@ function App() {
       {/* <HookCounterOne /> */}
       {/* <HookMouse /> */}
       {/* <MouseContainer /> */}
-      <IntervalHookCounter />
+      {/* <IntervalHookCounter /> */}
+
+      {/* Data fetching using useEffect */}
+      <DataFetching />
     </div>
   );
 }
