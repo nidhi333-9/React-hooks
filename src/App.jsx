@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import ComponentC from "./components/ComponentC";
+import CounterOne from "./components/CounterOne";
 import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
 import HookCounterOne from "./components/HookCounterOne";
@@ -31,11 +32,15 @@ function App() {
 
       {/* useContext */}
 
-      <UserContext.Provider value={"Nidhi"}>
+      {/* <UserContext.Provider value={"Nidhi"}>
         <ChannelContext.Provider value={"Codevolution"}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+      {/* useReducer */}
+
+      <CounterOne />
     </div>
   );
 }
