@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import ComponentC from "./components/ComponentC";
 import CounterOne from "./components/CounterOne";
+import CounterThree from "./components/CounterThree";
+import CounterTwo from "./components/CounterTwo";
 import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
 import HookCounterOne from "./components/HookCounterOne";
@@ -40,7 +42,9 @@ function App() {
 
       {/* useReducer */}
 
-      <CounterOne />
+      {/* <CounterOne /> */}
+      {/* <CounterTwo /> */}
+      <CounterThree />
     </div>
   );
 }
